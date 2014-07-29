@@ -2,15 +2,16 @@
 <html>
 <head>
   <title>Homepage</title>
+  <%= stylesheet_link_tag "http://yui.yahooapis.com/pure/0.5.0/base-min.css" %>
+  <%= stylesheet_link_tag :all %>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-  <%= stylesheet_link_tag "http://yui.yahooapis.com/pure/0.5.0/base-min.css" %>
 </head>
 <body>
 <div class="header">
     <div class="home-menu pure-menu pure-menu-open pure-menu-horizontal pure-menu-fixed">
-        <a class="pure-menu-heading" href="">HomePage</a>
+        <a class="pure-menu-heading" href="">Your Site</a>
 
         <ul>
             <li class="pure-menu-selected"><a href="#">Home</a></li>
@@ -19,22 +20,16 @@
         </ul>
     </div>
 </div>
-
 <div class="splash-container">
 	<div class="splash">
-    	<img class="pure-img-responsive" alt="Jason's photo" src="">
+    	<img class="pure-img-responsive" alt="Jason's photo" src="<%= asset_path( 'jz.jpg' ) %>">
 	</div>
 </div>
-
 <div class="content-wrapper">
-	<div class="content">
-    	<%= yield %>     
-	</div>
+		<%= yield %>   
 </div>
-
 <div class="footer l-box is-center">
     View the source of this layout to learn more. Made with love by the YUI Team.
-</div> 
-
+</div>   
 </body>
 </html>
