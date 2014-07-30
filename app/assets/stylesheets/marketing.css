@@ -29,12 +29,20 @@ label {
     height: auto;
 }
 
+a {
+    color: inherit;
+}
+
+.knowtime {
+    color:orange;
+}
+
 /*
  * -- LAYOUT STYLES --
  * These are some useful classes which I will need
  */
 .l-box {
-    padding: 1em;
+    padding: .5em;
 }
 
 .l-box-lrg {
