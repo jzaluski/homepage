@@ -10,6 +10,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
+gem 'twitter', '~> 5.11.0'
 
 gem "mongoid", git: 'git://github.com/mongoid/mongoid.git'
 gem "omniauth-twitter"
